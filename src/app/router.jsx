@@ -24,34 +24,37 @@ import ActivityHistory from "../features/dashboard/pages/ActivityHistory";
 // 404
 import NotFound from "../shared/components/NotFound";
 
-export const router = createBrowserRouter([
-  // Main Public Website
-  {
-    path: "/",
-    element: <MainLayout />,
-    children: [
-      { index: true, element: <Home /> },
-      { path: "waste-guide", element: <WasteGuide /> },
-      { path: "diy-projects", element: <DIYProjects /> },
-      { path: "diy-projects/:projectId", element: <ProjectDetails /> },
-      { path: "about", element: <About /> },
-      { path: "*", element: <NotFound /> }
-    ]
-  },
+export const router = createBrowserRouter(
+  [
+    // Main Public Website
+    {
+      path: "/",
+      element: <MainLayout />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: "waste-guide", element: <WasteGuide /> },
+        { path: "diy-projects", element: <DIYProjects /> },
+        { path: "diy-projects/:projectId", element: <ProjectDetails /> },
+        { path: "about", element: <About /> },
+        { path: "*", element: <NotFound /> }
+      ]
+    },
 
-  // User Dashboard
-  {
-    path: "/dashboard",
-    element: <DashboardLayout />,
-    children: [
-      { index: true, element: <DashboardHome /> },
-      { path: "waste-tracker", element: <WasteTracker /> },
-      { path: "favorites", element: <Favorites /> },
-      { path: "challenges", element: <EcoChallenges /> },
-      { path: "quiz", element: <EcoQuiz /> },
-      { path: "profile", element: <MyProfile /> },
-      { path: "history", element: <ActivityHistory /> },
-      { path: "*", element: <NotFound /> }
-    ]
-  }
-]);
+    // User Dashboard
+    {
+      path: "/dashboard",
+      element: <DashboardLayout />,
+      children: [
+        { index: true, element: <DashboardHome /> },
+        { path: "waste-tracker", element: <WasteTracker /> },
+        { path: "favorites", element: <Favorites /> },
+        { path: "challenges", element: <EcoChallenges /> },
+        { path: "quiz", element: <EcoQuiz /> },
+        { path: "profile", element: <MyProfile /> },
+        { path: "history", element: <ActivityHistory /> },
+        { path: "*", element: <NotFound /> }
+      ]
+    }
+  ],
+  { basename: "/waste" }
+);
