@@ -1,0 +1,127 @@
+/* Responsive Stylesheet */
+
+/* Desktop Large (1281px+) */
+@media (min-width: 1281px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* Laptop (769px to 1280px) */
+@media (max-width: 1280px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+/* Tablet (481px to 768px) */
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 3rem 0;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  .dashboard-sidebar {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    height: 100vh;
+    z-index: 1000;
+    transition: left var(--transition-normal);
+  }
+
+  .dashboard-sidebar.open {
+    left: 0;
+    box-shadow: var(--shadow-xl);
+  }
+
+  .sidebar-backdrop {
+    display: block !important;
+  }
+
+  .dashboard-main-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .charts-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .project-detail-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Mobile (320px to 480px) */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .section-padding {
+    padding: 2.25rem 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .modal-dialog {
+    margin: 0.5rem;
+    max-height: 95vh;
+  }
+
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .diy-filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .waste-table th, .waste-table td {
+    padding: 0.6rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}

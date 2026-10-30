@@ -1,0 +1,60 @@
+:root {
+  /* Brand Palette - Eco Forest & Leaf */
+  --color-primary: #1b5e20;
+  --color-primary-dark: #0f3d14;
+  --color-primary-light: #2e7d32;
+  --color-primary-subtle: #e8f5e9;
+  
+  --color-secondary: #388e3c;
+  --color-secondary-light: #4caf50;
+  --color-secondary-subtle: #edf7ee;
+  --color-accent: #66bb6a;
+  
+  /* Status Colors */
+  --color-info: #0288d1;
+  --color-info-subtle: #e1f5fe;
+  --color-warning: #f57c00;
+  --color-warning-subtle: #fff3e0;
+  --color-danger: #d32f2f;
+  --color-danger-subtle: #ffebee;
+  --color-purple: #7b1fa2;
+  --color-purple-subtle: #f3e5f5;
+
+  /* Neutrals & Surfaces */
+  --bg-page: #f8faf8;
+  --bg-surface: #ffffff;
+  --bg-subtle: #f1f5f2;
+  --bg-surface-elevated: #ffffff;
+
+  /* Typography */
+  --text-main: #1e293b;
+  --text-muted: #52606d;
+  --text-light: #7b8794;
+  --text-inverse: #ffffff;
+
+  /* Borders & Dividers */
+  --border-light: #e2e8e0;
+  --border-medium: #cbd5e1;
+  --border-focus: #2e7d32;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-slow: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Typography Scale */
+  --font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
